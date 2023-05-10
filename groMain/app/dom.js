@@ -1,0 +1,12 @@
+// assign DOM elements
+export const dealMenuOutput = document.getElementById('deal-menu')
+export const dealInfo = document.getElementById('dealInfo')
+export const dealDatetimeOutput = document.getElementById('deal-datetime-output')
+export const dealStageOutput = document.getElementById('deal-stage')
+export const groContainer = document.querySelector('#gro-container')
+export const productContainer = document.querySelector('#gro-products-container')
+export const taskContainer = document.querySelector('#gro-tasks-container')
+export const clientContainer = document.querySelector('#gro-clients-container')
+export const dealButton = document.querySelector('#gro-button')
+export const productButton = document.querySelector('#gro-product-button')
+export const taskButton = document.querySelector('#gro-task-button')

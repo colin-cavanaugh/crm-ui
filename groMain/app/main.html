@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="lib/ZohoEmbededAppSDK.min.js"></script>
+    <script src="jquery-min.js"></script>
+    <script  src="showHide.js"></script>
+  </head>
+  <body>
+    <div class="button-div">
+      <button onclick="showDeals()" id="gro-button" class="gro-button" type="button">My Deals</button>
+      <!-- <button onclick="showProducts()" id="gro-product-button" class="gro-button" type="button">My Projects</button> -->
+      <button onclick="showClients()" id="gro-button" class="gro-button" type="button">My Clients</button>
+      <button onclick="showTasks()" id="gro-task-button" class="gro-button" type="button">My Tasks</button>
+      <button id="gro-button" class="gro-button" type="button">My Forms</button>
+      <button id="gro-button" class="gro-button" type="button">My Projects</button>
+    </div>
+    <div class="wrapper">
+      <p class="typing-demo" id="userInfo"></p>
+    </div>
+    <div class="date-filter-div">
+    <select id="date-filter">
+        <option class="all-dates" value="">Filter By Month</option>
+    </select>
+  </div>
+    <!-- <div class="deals-menu-container">
+      <div class="deal-menu-div">
+      <p class="typing-demo">Deal Menu</p>
+      <output class="deal-menu" id="deal-menu"></output>
+    </div>
+    </div> -->
+    <div class="accounts-menu-container">
+      <div class="accounts-menu-div">
+      <p class="typing-demo">Accounts Menu</p>
+      <output class="accounts-menu" id="accounts-menu"></output>
+    </div>
+    </div>
+    <div id="gro-container" class="gro-container">
+      <div class="deal-links-container">
+        <p class="typing-demo">Related Account</p>
+        <output id="dealInfo"></output>
+        <output class="dealLinkInfo" id="dealLinkInfo"></output>
+      </div>
+      <div class="account-datetime-container">
+        <p class="typing-demo">Created Date</p>
+        <output class="account-datetime-output" id="account-datetime-output"></output>
+      </div>
+      <div class="stage-deals-container">
+        <p class="typing-demo">Deal Stage</p>
+        <output class="deal-stage" id="deal-stage"></output>
+      </div>
+    </div>
+    <div id="gro-products-container" class="gro-products-container">
+      <div id="prod-container-div" class="blockQuote">
+        <p class="typing-demo">Products Name</p>
+        <output id="productsInfo"></output>
+      </div>
+      <div class="prod-id-wrapper">
+        <div id="prod-id-div" class="prod-id-div">
+          <p class="typing-demo">Product Ids</p>
+        </div>
+        <output id="product-id-output"></output>
+      </div>
+      <div class="prod-category-wrapper">
+        <div id="prod-category-div" class="prod-category-div">
+          <p class="typing-demo">Open Tasks</p>
+        </div>
+        <output id="product-category-output"></output>
+      </div>
+    </div>
+    <div id="gro-tasks-container" class="gro-tasks-container">
+      <div id="task-container-div" class="blockQuote">
+        <p class="typing-demo">Open Tasks</p>
+        <output id="tasksInfo"></output>
+      </div>
+      <div class="task-id-wrapper">
+        <div id="task-id-div" class="task-id-div">
+          <p class="typing-demo">Task Form Link</p>
+        </div>
+        <output id="task-id-output"></output>
+      </div>
+      <div class="task-closed-wrapper">
+        <div id="task-closed-div" class="task-closed-div">
+          <p class="typing-demo">Required Action</p>
+        </div>
+        <output id="task-closed-output"></div>
+    </div>
+    <div id="gro-clients-container" class="gro-clients-container">
+      <div id="client-container-div" class="client-container-div">
+        <p class="typing-demo">Account Name</p>
+        <output id="clientInfo"></output>
+      </div>
+      <div class="client-id-wrapper">
+        <div id="client-id-div" class="client-id-div">
+          <p class="typing-demo">Account Ids</p>
+        </div>
+        <output id="client-id-output"></output>
+      </div>
+      <div class="client-contract-wrapper">
+        <div id="client-contract-div" class="client-contract-div">
+          <p class="typing-demo">Account Contract</p>
+        </div>
+        <output id="client-contract-output"></output>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      initializeWidget()
+    })
+  </script>
+
+    <!-- <script  src="main.js"></script> -->
+    <script  src="groMain.js"></script>
+    <script  src="renderClients.js"></script>
+    <script  src="eventListeners.js"></script>
+    <script  src="renderDates.js"></script>
+    <script  src="renderDeals.js"></script>
+    <script  src="renderProducts.js"></script>
+    <!-- <script  src="filterClients.js"></script> -->
+    <!-- <script  src="dom.js"></script> -->
+    <!-- <script  src="init.js"></script> -->
+    <!-- <script type="module" src="../js/showHide.js"></script> -->
+</html>

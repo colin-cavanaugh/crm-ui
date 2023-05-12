@@ -236,68 +236,7 @@ async function initializeWidget() {
       // Usage:
       const combinedUserData = combineUserData(allClients)
       console.log('Combined User Data:', combinedUserData)
-
-      // function combineUserData(allClients, allDeals, relatedClientSalesOrder, relatedZohoSignDocs, relatedClientTasks) {
-      //   return allClients.map((client, index) => ({
-      //     clients: {
-      //       Account_Name: client.Account_Name,
-      //       id: client.id,
-      //       Created_Time: client.Created_Time,
-      //     },
-      //     Deals: allDeals
-      //       ? allDeals.map((deal) => ({
-      //           Deal_Name: deal.Deal_Name,
-      //           id: deal.id,
-      //           Account: deal.Account_Name.id,
-      //         }))
-      //       : [],
-
-      //     salesOrder: relatedClientSalesOrder[index]
-      //       ? relatedClientSalesOrder[index].map((salesOrder) => ({
-      //           Subject: salesOrder.Subject,
-      //           id: salesOrder.id,
-      //           Account: salesOrder.Account_Name.id,
-      //           Product_Details: salesOrder.Product_Details.map((productDetail) => ({
-      //             product: {
-      //               id: productDetail.product.id,
-      //               name: productDetail.product.name,
-      //               code: productDetail.product.Product_Code,
-      //               currency: productDetail.product.Currency,
-      //               quantity: productDetail.quantity,
-      //               discount: productDetail.Discount,
-      //               totalAfterDiscount: productDetail.total_after_discount,
-      //               netTotal: productDetail.net_total,
-      //               tax: productDetail.Tax,
-      //               listPrice: productDetail.list_price,
-      //               unitPrice: productDetail.unit_price,
-      //               total: productDetail.total,
-      //               productDescription: productDetail.product_description,
-      //             },
-      //           })),
-      //           Grand_Total: salesOrder.Grand_Total,
-      //         }))
-      //       : [],
-      //     zohoSign_Docs: relatedZohoSignDocs[index]
-      //       ? relatedZohoSignDocs[index].map((signDoc) => ({
-      //           name: signDoc.Name,
-      //           id: signDoc.zohosign__ZohoSign_Document_ID,
-      //         }))
-      //       : [],
-      //     Tasks: relatedClientTasks[index]
-      //       ? relatedClientTasks[index].map((task) => ({
-      //           name: task.Subject,
-      //           id: task.id,
-      //           Form: task.Form_Link,
-      //         }))
-      //       : [],
-      //   }))
-      // }
-
-      // // Usage:
-      // const combinedUserData = combineUserData(allClients, allDeals, relatedClientSalesOrder, relatedZohoSignDocs, relatedClientTasks)
-      // console.log('Combined User Data:', combinedUserData)
-
-      // Sort combinedUserData by Name A-Z
+      
       function sortCombinedUserDataByName(combinedUserData) {
         return combinedUserData.sort((a, b) => {
           const nameA = a.clients.Account_Name.toUpperCase() // Ignore case
